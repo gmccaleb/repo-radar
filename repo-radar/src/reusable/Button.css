@@ -1,0 +1,31 @@
+.btn.submit {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+
+  background-color: #0969da;
+  color: #ffffff;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover state */
+.btn.submit:hover {
+  background-color: #0550ae;
+}
+
+/* Click (active) state */
+.btn.submit:active {
+  transform: scale(0.97);
+}
+
+/* Focus state for accessibility */
+.btn.submit:focus {
+  outline: 2px solid rgba(9, 105, 218, 0.4);
+  outline-offset: 2px;
+}

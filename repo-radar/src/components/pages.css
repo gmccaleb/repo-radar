@@ -1,0 +1,366 @@
+:root {
+  --bg: #12161d;
+  --surface: #1a202b;
+  --surface-2: #202838;
+
+  --text: #b8c4cf;
+  --text-muted: #7c8896;
+  --text-heading: #dbe5ee;
+
+  --border: #2a3342;
+
+  --accent: #2f81f7;
+  --accent-hover: #1f6feb;
+
+  --font: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+.home {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* HERO */
+.home-hero {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+}
+
+.home-hero p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* SEARCH BLOCK */
+.home-search-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  padding: 24px;
+  text-align: center;
+}
+
+.home-search-block h2 {
+  margin-bottom: 6px;
+}
+
+.home-search-block p {
+  margin-bottom: 16px;
+  color: var(--text-muted);
+}
+
+.home-search {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-search input {
+  flex: 1;
+  min-width: 220px;
+  max-width: 400px;
+
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+
+  outline: none;
+}
+
+.home-search button {
+  padding: 10px 14px;
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+  background: var(--accent);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.home-search button:hover {
+  background: var(--accent-hover);
+}
+
+/* FEATURES */
+.home-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  padding: 24px;
+}
+
+.home-section h2 {
+  margin-bottom: 12px;
+}
+
+.home-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-section li {
+  padding: 10px 12px;
+
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  color: var(--text);
+}
+
+/* FOOTER NOTE */
+.home-footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* =========================================================
+   SEARCH RESULTS
+========================================================= */
+.search-results {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-results h1 {
+  font-size: 2rem;
+  color: var(--text-heading);
+  margin-bottom: 6px;
+}
+
+.search-results p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.search-results section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* RESULT CARD */
+.result-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 14px 16px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  transition: 0.2s ease;
+}
+
+.result-card:hover {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+
+.result-card img {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+
+.result-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-heading);
+}
+
+.result-card p {
+  margin: 4px 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.result-card a {
+  margin-top: 6px;
+
+  font-size: 0.9rem;
+  color: var(--accent);
+
+  text-decoration: none;
+}
+
+.result-card a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.result-card > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================================
+   USER PROFILE
+========================================================= */
+.profile-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.loading-text,
+.error-text {
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.profile-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  padding: 20px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+  border: 2px solid var(--border);
+
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  margin: 0;
+  color: var(--text-heading);
+}
+
+.profile-username {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.profile-bio {
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.profile-info p {
+  margin: 2px 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* REPOS */
+.repo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.repo-title {
+  font-size: 1.5rem;
+  color: var(--text-heading);
+}
+
+.repo-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  transition: 0.2s ease;
+}
+
+.repo-card:hover {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+
+.repo-name {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-heading);
+}
+
+.repo-description {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.repo-language,
+.repo-stats {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

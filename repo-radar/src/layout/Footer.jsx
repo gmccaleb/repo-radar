@@ -1,7 +1,7 @@
 function Footer() {
     let thisYear = new Date().getFullYear();
   return (
-    <footer>
+    <footer className="footer">
       <div>&copy; {thisYear} RepoRadar - Gabrielle McCaleb</div>
     </footer>
   );
