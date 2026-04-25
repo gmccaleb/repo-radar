@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import Button from "../reusable/Button";
 
 function Home() {
   const [query, setQuery] = useState("");
@@ -41,7 +42,7 @@ function Home() {
             onChange={(e) => setQuery(e.target.value)}
           />
 
-          <button type="submit">Search User</button>
+          <Button type="submit" onClick={handleSearch} className="search" text="Search User" />
         </form>
       </section>
 
