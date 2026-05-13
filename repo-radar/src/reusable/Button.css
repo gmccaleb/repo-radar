@@ -1,0 +1,90 @@
+.btn {
+  padding: 8px 14px;
+
+  border-radius: 6px;
+  border: 1px solid var(--border);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.btn.submit {
+  background-color: var(--accent);
+  color: white;
+}
+
+.btn.submit:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn.submit:active {
+  transform: scale(0.97);
+}
+
+.btn.submit:focus {
+  outline: 2px solid rgba(47, 129, 247, 0.4);
+  outline-offset: 2px;
+}
+
+.btn.search {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.btn.search:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn.search:active {
+  transform: scale(0.97);
+}
+
+.btn.search:focus {
+  outline: 2px solid rgba(47, 129, 247, 0.4);
+  outline-offset: 2px;
+}
+
+
+.btn.compare {
+  padding: 10px 14px;
+
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-hover)
+  );
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: transform 0.1s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover */
+.btn.compare:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 12px rgba(47, 129, 247, 0.25);
+}
+
+/* Active click */
+.btn.compare:active {
+  transform: scale(0.97);
+}
+
+/* Focus (accessibility) */
+.btn.compare:focus {
+  outline: 2px solid rgba(47, 129, 247, 0.4);
+  outline-offset: 2px;
+}

@@ -1,0 +1,156 @@
+
+
+/* =========================
+   HEADER
+========================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 22px;
+
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LOGO */
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+
+  color: var(--text-heading);
+
+  transition: 0.2s ease;
+}
+
+.logo:hover {
+  color: var(--accent);
+}
+
+/* =========================
+   NAV
+========================= */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+
+  position: relative;
+  transition: 0.2s ease;
+}
+
+/* underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 2px;
+
+  background-color: var(--accent);
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   SEARCH
+========================= */
+.nav-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-search input {
+  padding: 6px 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  background: var(--surface-2);
+  color: var(--text);
+
+  font-size: 14px;
+  outline: none;
+
+  min-width: 200px;
+}
+
+.nav-search input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(47, 129, 247, 0.2);
+}
+
+.nav-search button {
+  padding: 6px 12px;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  background: var(--accent);
+  color: white;
+
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.nav-search button:hover {
+  background: var(--accent-hover);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  margin-top: auto;
+  padding: 16px 24px;
+
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+
+  color: var(--text-muted);
+  font-size: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--text);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--accent);
+}

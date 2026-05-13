@@ -1,0 +1,18 @@
+/* Makes the app container fill the viewport and use flex column */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content fills available space */
+.app-content {
+  flex: 1; /* expands between header and footer */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
