@@ -19,7 +19,6 @@ function Home() {
 
   return (
     <main className="home">
-
       {/* HERO */}
       <section className="home-hero">
         <h1>RepoRadar</h1>
@@ -37,12 +36,17 @@ function Home() {
         <form onSubmit={handleSearch} className="home-search">
           <input
             type="text"
-            placeholder="e.g. torvalds"
+            placeholder="input GitHub username..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
 
-          <Button type="submit" onClick={handleSearch} className="search" text="Search User" />
+          <Button
+            type="submit"
+            onClick={handleSearch}
+            className="search"
+            text="Search User"
+          />
         </form>
       </section>
 
@@ -60,11 +64,8 @@ function Home() {
 
       {/* OPTIONAL FUTURE EXPANSION HINT */}
       <section className="home-footer">
-        <p>
-          Powered by the GitHub API. Built for developer discovery.
-        </p>
+        <p>Powered by the GitHub API. Built for developer discovery.</p>
       </section>
-
     </main>
   );
 }

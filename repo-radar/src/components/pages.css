@@ -332,7 +332,6 @@ body {
   object-fit: cover;
 }
 
-
 .profile-name {
   font-size: 1.8rem;
   margin: 0;
@@ -472,7 +471,6 @@ body {
   outline: 2px solid rgba(47, 129, 247, 0.4);
   outline-offset: 2px;
 }
-
 
 .compare-page p {
   text-align: center;

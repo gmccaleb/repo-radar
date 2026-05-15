@@ -118,7 +118,6 @@ function Compare() {
             <p>🍴 Forks: {stats1.forks}</p>
           </div>
 
-          {/* VS */}
           <div className="vs">VS</div>
 
           {/* USER 2 */}
