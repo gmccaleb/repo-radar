@@ -34,7 +34,7 @@ https://github.com/gmccaleb/repo-radar
 ## Frontend
 
 - React
-- JavaScript (ES6+)
+- JavaScript
 - React Router
 - CSS
 - Vite
