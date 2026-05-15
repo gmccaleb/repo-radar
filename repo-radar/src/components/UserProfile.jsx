@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import Button from "../reusable/Button";
 
 function UserProfile() {
   const { username } = useParams();
@@ -49,6 +50,19 @@ function UserProfile() {
     0,
   );
 
+  const addFavorite = () => {
+    const stored = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    // Prevent duplicates
+    const exists = stored.find((u) => u.login === user.login);
+
+    if (exists) return;
+
+    const updated = [...stored, user];
+
+    localStorage.setItem("favorites", JSON.stringify(updated));
+  };
+
   return (
     <main className="profile-page">
       <section className="profile-header">
@@ -57,6 +71,12 @@ function UserProfile() {
           src={user.avatar_url}
           alt={user.login}
         />
+        {/* <Button
+          text="Add to Favorites"
+          onClick={addFavorite}
+          type="button"
+          className="favorite-button"
+        /> */}
 
         <div className="profile-info">
           <h1 className="profile-name">{user.name || user.login}</h1>
@@ -73,6 +93,12 @@ function UserProfile() {
 
           <p className="profile-stars">Total Stars: {totalStars}</p>
         </div>
+        <Button
+          text="Add to Favorites"
+          onClick={addFavorite}
+          type="button"
+          className="favorite-button"
+        />
       </section>
 
       <section className="repo-section">
