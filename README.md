@@ -110,9 +110,7 @@ https://docs.github.com/en/rest
 - Add GitHub OAuth authentication
 - Add dark/light mode
 - Repository sorting and filtering
-- Display contribution graphs
 - Add pagination for repositories
-- Improve accessibility features
 - Add backend support for user accounts
 
 ---
