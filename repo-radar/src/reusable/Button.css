@@ -49,18 +49,13 @@
   outline-offset: 2px;
 }
 
-
 .btn.compare {
   padding: 10px 14px;
 
   border: 1px solid var(--accent);
   border-radius: 8px;
 
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-hover)
-  );
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
 
   color: white;
 
@@ -69,7 +64,10 @@
 
   cursor: pointer;
 
-  transition: transform 0.1s ease, filter 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.1s ease,
+    filter 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 /* Hover */

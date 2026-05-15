@@ -71,12 +71,6 @@ function UserProfile() {
           src={user.avatar_url}
           alt={user.login}
         />
-        {/* <Button
-          text="Add to Favorites"
-          onClick={addFavorite}
-          type="button"
-          className="favorite-button"
-        /> */}
 
         <div className="profile-info">
           <h1 className="profile-name">{user.name || user.login}</h1>
